@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ग्रामबाज़ार (GramBazaar) | शहडोल के स्थानीय उत्पाद सीधे आपके घर तक</title>
+  <meta name="description" content="शहडोल, मध्य प्रदेश के प्रामाणिक स्थानीय उत्पाद — शुद्ध शहद, कोदो-कुटकी, देसी मसाले, जैविक दालें और हस्तशिल्प सीधे स्थानीय किसानों व कारीगरों से WhatsApp पर मंगाएं।">
+  <!-- Google Fonts: Noto Sans Devanagari & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#1b5e20',
+              950: '#0d3813'
+            },
+            saffron: {
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+              primary: '#e65100'
+            },
+            cream: {
+              50: '#fdfbf7',
+              100: '#f9f6ed',
+              200: '#f1ebd8',
+              300: '#e5dcbe'
+            }
+          },
+          fontFamily: {
+            devanagari: ['"Noto Sans Devanagari"', 'sans-serif'],
+            sans: ['Poppins', '"Noto Sans Devanagari"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif;
+      background-color: #fdfbf7;
+      color: #1f2937;
+    }
+    .hindi-text {
+      font-family: 'Noto Sans Devanagari', sans-serif;
+    }
+    /* Hide scrollbars smoothly */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-[#FDFBF7] text-gray-800 antialiased min-h-screen flex flex-col selection:bg-brand-100 selection:text-brand-900">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-brand-900 text-amber-200 text-xs sm:text-sm py-1.5 px-4 text-center font-medium flex items-center justify-center gap-2 border-b border-brand-800">
+    <span class="inline-block w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+    <span class="hindi-text">शहडोल जिले में घर बैठे शुद्ध ग्रामीण व जैविक उत्पाद मंगवाएं — सीधा किसान व कारीगर से संपर्क!</span>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 gap-4">
+        
+        <!-- Logo & Brand Name -->
+        <a href="#home" class="flex items-center gap-3 group flex-shrink-0">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-brand-900 to-brand-700 flex items-center justify-center text-white shadow-md shadow-brand-900/20 group-hover:scale-105 transition-transform">
+            <!-- Village Hut & Leaf Icon -->
+            <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 10L12 3L21 10V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V10Z" fill="#F59E0B" stroke="#D97706" />
+              <path d="M9 21V12H15V21" fill="white" stroke="#166534" />
+              <path d="M12 7C14 4 17 5 18 8C15 8 13 7.5 12 7Z" fill="#22C55E" />
+            </svg>
+          </div>
+          <div>
+            <div class="text-2xl font-black text-brand-900 tracking-tight flex items-center gap-1.5">
+              <span class="hindi-text">ग्रामबाज़ार</span>
+              <span class="text-xs uppercase tracking-widest text-saffron-primary font-bold px-1.5 py-0.5 bg-amber-50 rounded border border-amber-200">Shahdol</span>
+            </div>
+            <p class="text-[11px] text-gray-500 font-medium tracking-wide">GRAMBAZAAR | स्थानीय ई-कॉमर्स</p>
+          </div>
+        </a>
+
+        <!-- Desktop Search Bar -->
+        <div class="hidden md:flex flex-1 max-w-md mx-4 relative">
+          <div class="relative w-full">
+            <input 
+              type="text" 
+              id="desktopSearchInput" 
+              placeholder="उत्पाद या श्रेणी खोजें (उदा. शहद, चावल, मसाले)..." 
+              class="w-full pl-10 pr-10 py-2.5 rounded-full border border-gray-200 bg-gray-50/80 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-700/30 focus:border-brand-700 transition"
+              oninput="handleSearch(this.value)"
+            >
+            <i data-lucide="search" class="w-4 h-4 text-gray-400 absolute left-3.5 top-3.5"></i>
+            <button id="clearSearchBtn" onclick="clearSearch()" class="hidden absolute right-3 top-2.5 text-gray-400 hover:text-gray-600 p-1">
+              <i data-lucide="x" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-gray-700">
+          <a href="#home" class="hover:text-brand-800 transition py-1 border-b-2 border-transparent hover:border-brand-800">होम</a>
+          <a href="#products-section" class="hover:text-brand-800 transition py-1 border-b-2 border-transparent hover:border-brand-800">सभी उत्पाद</a>
+          <a href="#categories-section" class="hover:text-brand-800 transition py-1 border-b-2 border-transparent hover:border-brand-800">श्रेणियाँ</a>
+          <a href="#about-section" class="hover:text-brand-800 transition py-1 border-b-2 border-transparent hover:border-brand-800">हमारे बारे में</a>
+          <a href="#feedback-section" class="hover:text-brand-800 transition py-1 border-b-2 border-transparent hover:border-brand-800">सुझाव</a>
+        </nav>
+
+        <!-- Right Action Buttons -->
+        <div class="flex items-center gap-3">
+          <!-- AI Assistant Trigger Button -->
+          <button 
+            onclick="toggleAIAssistant()" 
+            class="flex items-center gap-2 px-3 py-2 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200/80 text-xs font-semibold shadow-xs transition transform active:scale-95"
+            title="GramBazaar AI सहायक"
+          >
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+            </span>
+            <i data-lucide="sparkles" class="w-4 h-4 text-amber-600"></i>
+            <span class="hidden sm:inline hindi-text">AI सहायक</span>
+          </button>
+
+          <!-- Shopping Cart Trigger Button -->
+          <button 
+            onclick="toggleCartDrawer(true)" 
+            class="relative p-2.5 rounded-xl bg-brand-50 hover:bg-brand-100 text-brand-900 border border-brand-200 transition transform active:scale-95"
+            aria-label="शॉपिंग कार्ट"
+          >
+            <i data-lucide="shopping-bag" class="w-5 h-5 text-brand-800"></i>
+            <span id="cartCountBadge" class="absolute -top-1.5 -right-1.5 bg-saffron-primary text-white text-[11px] font-bold h-5 min-w-[20px] px-1 rounded-full flex items-center justify-center shadow-xs scale-100 transition">0</span>
+          </button>
+
+          <!-- Mobile Menu Trigger -->
+          <button 
+            onclick="toggleMobileMenu()" 
+            class="lg:hidden p-2.5 rounded-xl text-gray-700 hover:bg-gray-100 transition"
+            aria-label="मेन्यू खोलें"
+          >
+            <i data-lucide="menu" id="menuIcon" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Search Field -->
+      <div class="md:hidden pb-3 pt-1">
+        <div class="relative w-full">
+          <input 
+            type="text" 
+            id="mobileSearchInput" 
+            placeholder="उत्पाद या श्रेणी खोजें..." 
+            class="w-full pl-10 pr-9 py-2 rounded-xl border border-gray-200 bg-gray-50 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-700/30"
+            oninput="handleSearch(this.value)"
+          >
+          <i data-lucide="search" class="w-4 h-4 text-gray-400 absolute left-3 top-3"></i>
+          <button id="mobileClearSearchBtn" onclick="clearSearch()" class="hidden absolute right-2.5 top-2 text-gray-400 p-1">
+            <i data-lucide="x" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-gray-100 bg-white px-4 pt-3 pb-6 space-y-3 shadow-lg">
+      <a href="#home" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-base font-medium text-gray-800 hover:bg-brand-50 hover:text-brand-900">होम</a>
+      <a href="#products-section" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-base font-medium text-gray-800 hover:bg-brand-50 hover:text-brand-900">सभी उत्पाद</a>
+      <a href="#categories-section" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-base font-medium text-gray-800 hover:bg-brand-50 hover:text-brand-900">श्रेणियाँ</a>
+      <a href="#about-section" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-base font-medium text-gray-800 hover:bg-brand-50 hover:text-brand-900">हमारे बारे में</a>
+      <a href="#feedback-section" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-base font-medium text-gray-800 hover:bg-brand-50 hover:text-brand-900">सुझाव भेजें</a>
+      <div class="pt-2 border-t border-gray-100 flex flex-col gap-2">
+        <a href="https://wa.me/919343135160?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87%20GramBazaar%21%20%E0%A4%AE%E0%A5%81%E0%A4%9D%E0%A5%87%20%E0%A4%89%E0%A4%A4%E0%A5%8D%E0%A4%AA%E0%A4%BE%E0%A4%A6%E0%A5%8B%E0%A4%82%20%E0%A4%95%E0%A5%87%20%E0%A4%AC%E0%A4%BE%E0%A4%B0%E0%A5%87%20%E0%A4%AE%E0%A5%87%E0%A4%82%20%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%80%20%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%8F%E0%A5%A4" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-green-600 text-white font-medium text-sm shadow hover:bg-green-700">
+          <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp पर सीधा संपर्क
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative overflow-hidden pt-6 pb-14 lg:py-16 bg-gradient-to-b from-brand-50/70 via-cream-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100/80 border border-brand-200 text-brand-900 text-xs sm:text-sm font-semibold shadow-xs">
+            <span class="w-2 h-2 rounded-full bg-brand-600"></span>
+            <span class="hindi-text">शहडोल, मध्य प्रदेश का प्रामाणिक स्थानीय बाज़ार</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight sm:leading-snug">
+            <span class="hindi-text text-brand-950">शाहडोल के स्थानीय उत्पाद,</span><br>
+            <span class="hindi-text text-brand-700">अब सीधे आपके घर तक!</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0 hindi-text leading-relaxed font-normal">
+            अपने क्षेत्र के शुद्ध प्राकृतिक खाद्य पदार्थ, पारंपरिक मोटे अनाज, शहद, मसाले और हस्तशिल्प खरीदें। स्थानीय किसानों और स्व-सहायता समूहों को सशक्त बनाएं।
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
+            <a 
+              href="#products-section" 
+              class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-brand-900 hover:bg-brand-800 text-white font-bold text-base shadow-lg shadow-brand-900/20 hover:shadow-xl transition transform active:scale-95 flex items-center justify-center gap-2"
+            >
+              <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+              <span class="hindi-text">अभी उत्पाद देखें</span>
+            </a>
+            
+            <a 
+              href="https://wa.me/919343135160?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87%20GramBazaar%20%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A4%E0%A4%BE%20%E0%A4%9C%E0%A5%80%21%20%E0%A4%AE%E0%A5%81%E0%A4%9D%E0%A5%87%20%E0%A4%B6%E0%A4%B9%E0%A4%A1%E0%A5%8B%E0%A4%B2%20%E0%A4%95%E0%A5%87%20%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%BE%E0%A4%A8%E0%A5%80%E0%A4%AF%20%E0%A4%89%E0%A4%A4%E0%A5%8D%E0%A4%AA%E0%A4%BE%E0%A4%A6%E0%A5%8B%E0%A4%82%20%E0%A4%95%E0%A5%87%20%E0%A4%AC%E0%A4%BE%E0%A4%B0%E0%A5%87%20%E0%A4%AE%E0%A5%87%E0%A4%82%20%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%80%20%E0%A4%B2%E0%A5%87%E0%A4%A8%E0%A5%80%20%E0%A4%B9%E0%A5%88%E0%A5%A4" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-white hover:bg-emerald-50 text-emerald-800 border-2 border-emerald-600 font-bold text-base shadow-sm transition transform active:scale-95 flex items-center justify-center gap-2"
+            >
+              <i data-lucide="message-circle" class="w-5 h-5 text-emerald-600"></i>
+              <span class="hindi-text">WhatsApp पर पूछें</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="pt-4 border-t border-gray-200/60 grid grid-cols-3 gap-3 max-w-lg mx-auto lg:mx-0">
+            <div class="flex items-center gap-2.5 text-left">
+              <div class="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-700 flex-shrink-0">
+                <i data-lucide="sprout" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-gray-800 hindi-text">100% स्थानीय</p>
+                <p class="text-[11px] text-gray-500">शाहडोल निर्मित</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2.5 text-left">
+              <div class="w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 flex-shrink-0">
+                <i data-lucide="zap" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-gray-800 hindi-text">आसान ऑर्डर</p>
+                <p class="text-[11px] text-gray-500">1-क्लिक WhatsApp</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2.5 text-left">
+              <div class="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center text-blue-700 flex-shrink-0">
+                <i data-lucide="shield-check" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-gray-800 hindi-text">सीधा संपर्क</p>
+                <p class="text-[11px] text-gray-500">बिना बिचौलिया</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md bg-white rounded-3xl p-5 shadow-2xl shadow-brand-900/10 border border-amber-100 overflow-hidden">
+            <!-- Decorative Accent -->
+            <div class="absolute -top-12 -right-12 w-40 h-40 bg-amber-200/40 rounded-full blur-2xl"></div>
+            <div class="absolute -bottom-12 -left-12 w-40 h-40 bg-brand-200/40 rounded-full blur-2xl"></div>
+
+            <div class="relative rounded-2xl overflow-hidden bg-cream-100 border border-gray-100 aspect-[4/3] flex items-center justify-center p-6 text-center">
+              <div class="space-y-4">
+                <div class="w-20 h-20 mx-auto rounded-2xl bg-gradient-to-tr from-brand-900 to-amber-500 flex items-center justify-center shadow-lg text-white">
+                  <i data-lucide="store" class="w-10 h-10"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-gray-900 hindi-text">ग्राम हाट बाज़ार, शहडोल</h3>
+                  <p class="text-xs text-gray-600 mt-1 hindi-text">कोदो-कुटकी, वन शहद, देशी घी, महुआ उत्पाद और हस्तनिर्मित टोकरियाँ</p>
+                </div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white shadow-xs text-xs font-bold text-brand-900 border border-brand-200">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5 text-red-500"></i> शहडोल, म.प्र.
+                </div>
+              </div>
+            </div>
+
+            <!-- Mini Highlight Stats -->
+            <div class="grid grid-cols-2 gap-3 mt-4 pt-3 border-t border-gray-100">
+              <div class="bg-gray-50 p-2.5 rounded-xl text-center">
+                <span class="text-lg font-black text-brand-900">15+</span>
+                <p class="text-[11px] text-gray-500 font-medium hindi-text">स्थानीय उत्पाद श्रेणियाँ</p>
+              </div>
+              <div class="bg-gray-50 p-2.5 rounded-xl text-center">
+                <span class="text-lg font-black text-saffron-primary">0%</span>
+                <p class="text-[11px] text-gray-500 font-medium hindi-text">कोई छिपा हुआ शुल्क नहीं</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Ordering Steps Banner -->
+  <section class="py-10 bg-white border-y border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-xl mx-auto mb-8">
+        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 hindi-text">ऑर्डर करना बेहद आसान है</h2>
+        <p class="text-xs sm:text-sm text-gray-500 mt-1 hindi-text">सिर्फ 3 आसान चरणों में अपने घर मंगाएं</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
+        <!-- Step 1 -->
+        <div class="bg-cream-50/70 rounded-2xl p-5 border border-amber-100/80 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-brand-900 text-white font-bold flex items-center justify-center flex-shrink-0 shadow-sm">
+            १
+          </div>
+          <div>
+            <h3 class="font-bold text-gray-900 text-sm hindi-text">पसंदीदा उत्पाद चुनें</h3>
+            <p class="text-xs text-gray-600 mt-1 hindi-text">सूची में से उत्पाद देखें और आवश्यक मात्रा (+/-) जोड़ें।</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="bg-cream-50/70 rounded-2xl p-5 border border-amber-100/80 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-saffron-primary text-white font-bold flex items-center justify-center flex-shrink-0 shadow-sm">
+            २
+          </div>
+          <div>
+            <h3 class="font-bold text-gray-900 text-sm hindi-text">कार्ट में जोड़ें व विवरण भरें</h3>
+            <p class="text-xs text-gray-600 mt-1 hindi-text">अपना नाम, फ़ोन नंबर व डिलीवरी पता दर्ज करें।</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="bg-cream-50/70 rounded-2xl p-5 border border-amber-100/80 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-green-600 text-white font-bold flex items-center justify-center flex-shrink-0 shadow-sm">
+            ३
+          </div>
+          <div>
+            <h3 class="font-bold text-gray-900 text-sm hindi-text">WhatsApp पर भेजें</h3>
+            <p class="text-xs text-gray-600 mt-1 hindi-text">एक क्लिक में विक्रेता को ऑर्डर संदेश भेजें और पुष्टि प्राप्त करें।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section id="categories-section" class="py-12 bg-cream-50/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
+        <div>
+          <span class="text-xs font-bold text-brand-800 tracking-wider uppercase hindi-text">विशिष्ट श्रेणियाँ</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 hindi-text mt-1">शहडोल के स्थानीय उत्पाद वर्ग</h2>
+        </div>
+        <p class="text-xs sm:text-sm text-gray-500 mt-2 md:mt-0 max-w-md hindi-text">
+          अपनी पसंद की श्रेणी चुनकर तुरंत उत्पाद फ़िल्टर करें
+        </p>
+      </div>
+
+      <!-- Categories Filter Grid -->
+      <div id="categoryCardsContainer" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3.5">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Products Catalog Section -->
+  <section id="products-section" class="py-14 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Catalog Header & Controls -->
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-6 border-b border-gray-100">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-brand-700"></span>
+            <h2 class="text-2xl sm:text-3xl font-black text-gray-900 hindi-text">उपलब्ध उत्पाद सूची</h2>
+          </div>
+          <p class="text-xs sm:text-sm text-gray-500 mt-1 hindi-text">
+            *दर्शायी गई कीमतें एवं उत्पाद उदाहरण स्वरूप हैं, विक्रेता से पुष्टि करें।
+          </p>
+        </div>
+
+        <!-- Filter & Sort Bar -->
+        <div class="flex flex-wrap items-center gap-2.5">
+          <!-- Active Filter Pill -->
+          <div id="activeFilterPill" class="hidden items-center gap-1.5 px-3 py-1.5 rounded-full bg-brand-100 text-brand-900 text-xs font-semibold">
+            <span id="activeFilterName">सभी</span>
+            <button onclick="filterByCategory('all')" class="hover:text-brand-950">
+              <i data-lucide="x" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+
+          <!-- Sort Select -->
+          <div class="relative">
+            <select 
+              id="sortSelect" 
+              onchange="handleSort(this.value)"
+              class="appearance-none bg-gray-50 border border-gray-200 rounded-xl px-3.5 py-2 pr-8 text-xs font-semibold text-gray-700 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-700/30 cursor-pointer"
+            >
+              <option value="featured">क्रम: मुख्य उत्पाद</option>
+              <option value="price-asc">कीमत: कम से अधिक (₹)</option>
+              <option value="price-desc">कीमत: अधिक से कम (₹)</option>
+              <option value="name">नाम अनुसार (क-ह)</option>
+            </select>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-gray-400 absolute right-2.5 top-2.5 pointer-events-none"></i>
+          </div>
+
+          <!-- Reset Filter Button -->
+          <button 
+            onclick="resetAllFilters()" 
+            class="px-3.5 py-2 rounded-xl border border-gray-200 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-xs font-semibold transition"
+          >
+            सभी देखें
+          </button>
+        </div>
+      </div>
+
+      <!-- Search/Empty Results Notice -->
+      <div id="emptyNotice" class="hidden py-16 text-center">
+        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-100 flex items-center justify-center text-gray-400">
+          <i data-lucide="package-search" class="w-8 h-8"></i>
+        </div>
+        <h3 class="text-lg font-bold text-gray-800 hindi-text">कोई उत्पाद नहीं मिला</h3>
+        <p class="text-xs sm:text-sm text-gray-500 mt-1 max-w-sm mx-auto hindi-text">
+          कृपया अन्य कीवर्ड खोजें या श्रेणी फ़िल्टर रीसेट करें।
+        </p>
+        <button onclick="resetAllFilters()" class="mt-4 px-5 py-2 rounded-xl bg-brand-900 text-white text-xs font-bold hindi-text">
+          सभी उत्पाद पुनः देखें
+        </button>
+      </div>
+
+      <!-- Products Grid -->
+      <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-8">
+        <!-- Rendered via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About GramBazaar Section -->
+  <section id="about-section" class="py-14 bg-cream-50/80 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-6 space-y-4">
+          <span class="text-xs font-bold text-brand-800 tracking-wider uppercase hindi-text">शहडोल की पहचान</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 hindi-text leading-snug">
+            ग्रामबाज़ार — स्थानीय कारीगरों और किसानों का डिजिटल मंच
+          </h2>
+          <p class="text-sm text-gray-600 leading-relaxed hindi-text">
+            शहडोल (मध्य प्रदेश) प्राकृतिक संपदा और पारंपरिक कृषि उत्पादों से समृद्ध क्षेत्र है। यहाँ का वन शहद, कोदो-कुटकी, जैविक दालें और हस्तशिल्प अपनी विशिष्ट पहचान रखते हैं।
+          </p>
+          <p class="text-sm text-gray-600 leading-relaxed hindi-text">
+            ग्रामबाज़ार का उद्देश्य है कि बिना किसी भारी कमीशन या जटिल प्रक्रिया के, हमारे स्थानीय उत्पादक सीधे स्थानीय ग्राहकों तक अपने उत्पाद पहुँचा सकें। 
+          </p>
+          
+          <div class="grid grid-cols-2 gap-4 pt-3">
+            <div class="bg-white p-3.5 rounded-xl border border-gray-200/80 shadow-xs">
+              <h4 class="font-bold text-brand-900 text-sm hindi-text">स्थानीय स्व-सहायता समूह</h4>
+              <p class="text-xs text-gray-500 mt-0.5 hindi-text">महिला समूहों एवं लघु उद्यमियों को समर्थन</p>
+            </div>
+            <div class="bg-white p-3.5 rounded-xl border border-gray-200/80 shadow-xs">
+              <h4 class="font-bold text-brand-900 text-sm hindi-text">सीधा WhatsApp ऑर्डर</h4>
+              <p class="text-xs text-gray-500 mt-0.5 hindi-text">पारदर्शी बातचीत और प्रामाणिक डिलीवरी</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <!-- FAQ Accordion -->
+          <div class="bg-white rounded-2xl p-6 border border-gray-200/80 shadow-sm space-y-3.5">
+            <h3 class="text-lg font-bold text-gray-900 mb-2 hindi-text flex items-center gap-2">
+              <i data-lucide="help-circle" class="w-5 h-5 text-amber-500"></i>
+              अक्सर पूछे जाने वाले सवाल (FAQ)
+            </h3>
+            
+            <div class="border border-gray-100 rounded-xl p-3.5 bg-gray-50/50">
+              <h4 class="text-xs font-bold text-gray-900 hindi-text">भुगतान कैसे होगा?</h4>
+              <p class="text-xs text-gray-600 mt-1 hindi-text">ऑर्डर भेजने के बाद विक्रेता से सीधे WhatsApp पर UPI (PhonePe, Google Pay, Paytm) या डिलीवरी पर नकद (COD) तय कर सकते हैं।</p>
+            </div>
+
+            <div class="border border-gray-100 rounded-xl p-3.5 bg-gray-50/50">
+              <h4 class="text-xs font-bold text-gray-900 hindi-text">डिलीवरी कितने समय में मिलेगी?</h4>
+              <p class="text-xs text-gray-600 mt-1 hindi-text">शहडोल नगर एवं आसपास के क्षेत्रों के लिए डिलीवरी का समय विक्रेता सीधे WhatsApp संदेश में आपके पते के अनुसार साझा करेंगे।</p>
+            </div>
+
+            <div class="border border-gray-100 rounded-xl p-3.5 bg-gray-50/50">
+              <h4 class="text-xs font-bold text-gray-900 hindi-text">क्या कोई नया उत्पाद जुड़वाना हो तो क्या करें?</h4>
+              <p class="text-xs text-gray-600 mt-1 hindi-text">नीचे दिए गए सुझाव फॉर्म से या सीधे WhatsApp पर विक्रेता को उत्पाद की जानकारी भेज सकते हैं।</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Suggestions / Feedback Section -->
+  <section id="feedback-section" class="py-14 bg-white border-t border-gray-100">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-br from-brand-900 to-brand-950 rounded-3xl p-6 sm:p-10 text-white shadow-xl relative overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-amber-400/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-2xl">
+          <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white/10 text-amber-300 text-xs font-bold tracking-wide hindi-text mb-3">
+            <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
+            आपकी राय
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight hindi-text">
+            आपके सुझाव हमारे लिए महत्वपूर्ण हैं
+          </h2>
+          <p class="text-gray-300 text-xs sm:text-sm mt-2 hindi-text">
+            क्या आप शहडोल के किसी अन्य स्थानीय उत्पाद को यहाँ देखना चाहते हैं? अपना विचार या उत्पाद सुझाव हमें सीधे WhatsApp पर भेजें।
+          </p>
+
+          <form onsubmit="handleSuggestionSubmit(event)" class="mt-6 space-y-3.5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-medium text-gray-300 mb-1 hindi-text">आपका नाम</label>
+                <input 
+                  type="text" 
+                  id="suggestionName" 
+                  required 
+                  placeholder="उदा. अमित तिवारी"
+                  class="w-full px-3.5 py-2.5 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-400 text-xs focus:outline-none focus:bg-white/20 focus:border-amber-300"
+                >
+              </div>
+              <div>
+                <label class="block text-xs font-medium text-gray-300 mb-1 hindi-text">सुझाव का प्रकार</label>
+                <select 
+                  id="suggestionType" 
+                  class="w-full px-3.5 py-2.5 rounded-xl bg-brand-900 border border-white/20 text-white text-xs focus:outline-none focus:border-amber-300"
+                >
+                  <option value="नया उत्पाद मांग">नया उत्पाद शामिल करने का अनुरोध</option>
+                  <option value="नई श्रेणी">नई श्रेणी सुझाव</option>
+                  <option value="वेबसाइट फीडबैक">वेबसाइट से संबंधित प्रतिक्रिया</option>
+                  <option value="विक्रेता पंजीकरण">विक्रेता के रूप में जुड़ें</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-gray-300 mb-1 hindi-text">आपका सुझाव या संदेश</label>
+              <textarea 
+                id="suggestionMsg" 
+                rows="3" 
+                required 
+                placeholder="यहाँ बताएं कि आप कौन सा स्थानीय उत्पाद यहाँ देखना चाहते हैं..."
+                class="w-full px-3.5 py-2.5 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-400 text-xs focus:outline-none focus:bg-white/20 focus:border-amber-300"
+              ></textarea>
+            </div>
+
+            <button 
+              type="submit" 
+              class="w-full sm:w-auto px-7 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-brand-950 font-bold text-xs sm:text-sm shadow-md transition transform active:scale-95 flex items-center justify-center gap-2 hindi-text"
+            >
+              <i data-lucide="send" class="w-4 h-4"></i>
+              सुझाव WhatsApp पर भेजें
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 text-xs border-t border-gray-800 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div class="md:col-span-2 space-y-3">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-brand-700 flex items-center justify-center text-white">
+              <i data-lucide="store" class="w-4 h-4"></i>
+            </div>
+            <span class="text-white text-base font-bold hindi-text">ग्रामबाज़ार (GramBazaar)</span>
+          </div>
+          <p class="text-gray-400 leading-relaxed hindi-text max-w-sm">
+            शहडोल (मध्य प्रदेश) के स्थानीय विक्रेताओं, किसानों और उत्पादकों को सीधे ग्राहकों से जोड़ने का एक सरल व सुरक्षित माध्यम।
+          </p>
+          <div class="text-[11px] text-gray-500">
+            विक्रेता WhatsApp: <strong class="text-emerald-400">+91 9343135160</strong>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-3 hindi-text">त्वरित लिंक</h4>
+          <ul class="space-y-2">
+            <li><a href="#home" class="hover:text-white transition">होम</a></li>
+            <li><a href="#products-section" class="hover:text-white transition">सभी उत्पाद</a></li>
+            <li><a href="#categories-section" class="hover:text-white transition">श्रेणियाँ</a></li>
+            <li><a href="#about-section" class="hover:text-white transition">हमारे बारे में</a></li>
+            <li><a href="#feedback-section" class="hover:text-white transition">सुझाव</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-3 hindi-text">संपर्क एवं सहायता</h4>
+          <p class="text-gray-400 hindi-text mb-2">शहडोल, मध्य प्रदेश — 484001</p>
+          <a 
+            href="https://wa.me/919343135160?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87%20GramBazaar%21" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-emerald-600 text-white font-bold hover:bg-emerald-500 transition text-xs"
+          >
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            WhatsApp चैट प्रारंभ करें
+          </a>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between text-gray-500 text-[11px]">
+        <p>© 2025 GramBazaar. शाहडोल, मध्य प्रदेश। सर्वाधिकार सुरक्षित।</p>
+        <p class="mt-2 sm:mt-0 hindi-text">स्थानीय अर्थव्यवस्था को समर्थन दें — वोकल फॉर लोकल</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================== -->
+  <!-- MODALS & OVERLAYS                          -->
+  <!-- ========================================== -->
+
+  <!-- Shopping Cart Slide-out Drawer -->
+  <div id="cartDrawerBackdrop" onclick="toggleCartDrawer(false)" class="fixed inset-0 bg-black/50 z-50 transition-opacity duration-300 opacity-0 pointer-events-none backdrop-blur-xs"></div>
+  <aside id="cartDrawer" class="fixed right-0 top-0 bottom-0 w-full sm:w-[420px] bg-white z-50 shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 ease-in-out">
+    <!-- Drawer Header -->
+    <div class="p-4 sm:p-5 border-b border-gray-100 flex items-center justify-between bg-cream-50">
+      <div class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-xl bg-brand-900 text-white flex items-center justify-center">
+          <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="font-bold text-gray-900 text-base hindi-text">आपकी शॉपिंग कार्ट</h3>
+          <p id="drawerItemCountText" class="text-xs text-gray-500">0 उत्पाद जोड़े गए</p>
+        </div>
+      </div>
+      <button onclick="toggleCartDrawer(false)" class="p-2 rounded-lg text-gray-400 hover:text-gray-700 hover:bg-gray-200/50 transition">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <!-- Drawer Content / Items List -->
+    <div id="cartItemsList" class="flex-1 overflow-y-auto p-4 sm:p-5 space-y-3.5 no-scrollbar">
+      <!-- Injected via JavaScript -->
+    </div>
+
+    <!-- Drawer Footer (Subtotals & Checkout Trigger) -->
+    <div id="cartDrawerFooter" class="p-4 sm:p-5 border-t border-gray-100 bg-gray-50 space-y-3">
+      <div class="space-y-1.5 text-xs text-gray-600">
+        <div class="flex justify-between">
+          <span class="hindi-text">कुल वस्तुएं:</span>
+          <span id="drawerTotalQty" class="font-semibold text-gray-800">0</span>
+        </div>
+        <div class="flex justify-between text-base font-black text-gray-900 pt-1 border-t border-gray-200">
+          <span class="hindi-text">कुल अनुमानित राशि:</span>
+          <span id="drawerGrandTotal" class="text-brand-900">₹0</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-2 pt-1">
+        <button 
+          onclick="clearCart()" 
+          class="w-full py-2.5 px-3 rounded-xl border border-red-200 text-red-600 hover:bg-red-50 text-xs font-bold transition flex items-center justify-center gap-1.5"
+        >
+          <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+          <span class="hindi-text">कार्ट खाली करें</span>
+        </button>
+        <button 
+          id="checkoutTriggerBtn"
+          onclick="openCheckoutModal()" 
+          class="w-full py-2.5 px-3 rounded-xl bg-brand-900 hover:bg-brand-800 text-white text-xs font-bold shadow-md transition flex items-center justify-center gap-1.5"
+        >
+          <span class="hindi-text">आगे बढ़ें</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </button>
+      </div>
+      <p class="text-[10px] text-center text-gray-400 hindi-text">*ऑर्डर का भुगतान डिलीवरी या सीधे WhatsApp पर तय होगा।</p>
+    </div>
+  </aside>
+
+  <!-- Checkout Modal -->
+  <div id="checkoutModalBackdrop" class="fixed inset-0 bg-black/60 z-50 hidden items-center justify-center p-4 backdrop-blur-xs">
+    <div class="bg-white rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-gray-100 flex flex-col">
+      <!-- Modal Header -->
+      <div class="p-5 border-b border-gray-100 flex items-center justify-between bg-cream-50 sticky top-0 z-10">
+        <div>
+          <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider">चरण २: संपर्क विवरण</span>
+          <h3 class="font-bold text-gray-900 text-lg hindi-text">ग्राहक विवरण एवं WhatsApp ऑर्डर</h3>
+        </div>
+        <button onclick="closeCheckoutModal()" class="p-2 rounded-lg text-gray-400 hover:text-gray-700">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-5 sm:p-6 space-y-5">
+        <!-- Order Summary Preview Card -->
+        <div class="bg-amber-50/60 rounded-2xl p-4 border border-amber-200/70 text-xs space-y-2">
+          <div class="flex items-center justify-between font-bold text-amber-950">
+            <span class="hindi-text">ऑर्डर सारांश:</span>
+            <span id="checkoutSummaryCount" class="text-xs text-amber-800">0 उत्पाद</span>
+          </div>
+          <div id="checkoutItemsListSnippet" class="max-h-28 overflow-y-auto text-gray-700 space-y-1 pr-1 font-mono text-[11px]">
+            <!-- Injected list snippet -->
+          </div>
+          <div class="pt-2 border-t border-amber-200/60 flex justify-between font-bold text-gray-900 text-sm">
+            <span class="hindi-text">कुल देय राशि:</span>
+            <span id="checkoutSummaryTotal" class="text-brand-900 font-black">₹0</span>
+          </div>
+        </div>
+
+        <!-- Checkout Form -->
+        <form id="checkoutForm" onsubmit="submitWhatsAppOrder(event)" class="space-y-4">
+          <div>
+            <label class="block text-xs font-bold text-gray-700 mb-1 hindi-text">
+              ग्राहक का पूरा नाम <span class="text-red-500">*</span>
+            </label>
+            <input 
+              type="text" 
+              id="custName" 
+              required 
+              placeholder="उदा. राहुल कुमार"
+              class="w-full px-3.5 py-2.5 rounded-xl border border-gray-200 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-brand-700/30 focus:border-brand-700"
+            >
+            <p id="custNameError" class="hidden text-[11px] text-red-600 mt-1 hindi-text">कृपया अपना नाम दर्ज करें।</p>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-gray-700 mb-1 hindi-text">
+              मोबाइल नंबर (WhatsApp नंबर) <span class="text-red-500">*</span>
+            </label>
+            <div class="relative">
+              <span class="absolute left-3.5 top-2.5 text-xs text-gray-500 font-semibold">+91</span>
+              <input 
+                type="tel" 
+                id="custPhone" 
+                required 
+                maxlength="10"
+                pattern="[0-9]{10}"
+                placeholder="10 अंकों का मोबाइल नंबर"
+                class="w-full pl-12 pr-3.5 py-2.5 rounded-xl border border-gray-200 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-brand-700/30 focus:border-brand-700"
+              >
+            </div>
+            <p id="custPhoneError" class="hidden text-[11px] text-red-600 mt-1 hindi-text">कृपया 10 अंकों का वैध भारतीय मोबाइल नंबर भरें।</p>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-gray-700 mb-1 hindi-text">
+              पूरा डिलीवरी पता (शहडोल) <span class="text-red-500">*</span>
+            </label>
+            <textarea 
+              id="custAddress" 
+              rows="2" 
+              required 
+              placeholder="मकान नंबर, वार्ड / मोहल्ला, लैंडमार्क, शहडोल, म.प्र."
+              class="w-full px-3.5 py-2.5 rounded-xl border border-gray-200 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-brand-700/30 focus:border-brand-700"
+            ></textarea>
+            <p id="custAddressError" class="hidden text-[11px] text-red-600 mt-1 hindi-text">कृपया डिलीवरी पता दर्ज करें।</p>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-gray-600 mb-1 hindi-text">
+              अतिरिक्त निर्देश / टिप्पणी (वैकल्पिक)
+            </label>
+            <input 
+              type="text" 
+              id="custNotes" 
+              placeholder="उदा. शाम 5 बजे के बाद कॉल करें"
+              class="w-full px-3.5 py-2 rounded-xl border border-gray-200 text-xs focus:outline-none focus:ring-2 focus:ring-brand-700/30"
+            >
+          </div>
+
+          <!-- Important Note -->
+          <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-200 text-[11px] text-emerald-800 flex items-start gap-2">
+            <i data-lucide="info" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
+            <span class="hindi-text">
+              बटन दबाने पर आधिकारिक <strong>WhatsApp</strong> खुलेगा। कृपया संदेश देखकर <strong>Send (भेजें)</strong> बटन अवश्य दबाएं।
+            </span>
+          </div>
+
+          <!-- Buttons -->
+          <div class="pt-2 flex items-center justify-end gap-2.5">
+            <button 
+              type="button" 
+              onclick="closeCheckoutModal()" 
+              class="px-4 py-2.5 rounded-xl border border-gray-200 text-gray-600 text-xs font-bold hover:bg-gray-50 hindi-text"
+            >
+              वापस कार्ट पर जाएं
+            </button>
+            <button 
+              type="submit" 
+              class="flex-1 px-5 py-3 rounded-xl bg-green-600 hover:bg-green-700 text-white text-xs sm:text-sm font-bold shadow-lg shadow-green-600/20 transition transform active:scale-95 flex items-center justify-center gap-2 hindi-text"
+            >
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              WhatsApp पर ऑर्डर भेजें (+91 9343135160)
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Assistant Modal (Groq AI) -->
+  <div id="aiModalBackdrop" class="fixed inset-0 bg-black/60 z-50 hidden items-center justify-center p-4 backdrop-blur-xs">
+    <div class="bg-white rounded-3xl max-w-lg w-full max-h-[85vh] overflow-hidden shadow-2xl border border-amber-200 flex flex-col">
+      
+      <!-- AI Header -->
+      <div class="p-4 sm:p-5 bg-gradient-to-r from-brand-900 to-brand-800 text-white flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-2xl bg-amber-400 text-brand-950 flex items-center justify-center shadow-md">
+            <i data-lucide="sparkles" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <h3 class="font-bold text-sm sm:text-base hindi-text">GramBazaar AI सहायक</h3>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/30 text-emerald-200 border border-emerald-400/30">Groq Powered</span>
+            </div>
+            <p class="text-xs text-amber-200 hindi-text">शहडोल के उत्पादों के संबंध में कोई भी सवाल पूछें</p>
+          </div>
+        </div>
+        <button onclick="toggleAIAssistant(false)" class="p-2 rounded-xl text-white/70 hover:text-white hover:bg-white/10 transition">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Quick Prompt Suggestion Chips -->
+      <div class="px-4 py-2.5 bg-amber-50/60 border-b border-amber-100 flex items-center gap-2 overflow-x-auto no-scrollbar text-xs">
+        <span class="text-gray-500 font-semibold text-[11px] whitespace-nowrap hindi-text">सुझाव:</span>
+        <button onclick="askQuickQuestion('मधुमेह (शुगर) के लिए कौन सा स्थानीय उत्पाद अच्छा है?')" class="whitespace-nowrap px-2.5 py-1 rounded-full bg-white border border-amber-200 text-amber-900 text-[11px] hover:bg-amber-100 transition">
+          कोदो-कुटकी लाभ?
+        </button>
+        <button onclick="askQuickQuestion('शुद्ध वन शहद की क्या पहचान है?')" class="whitespace-nowrap px-2.5 py-1 rounded-full bg-white border border-amber-200 text-amber-900 text-[11px] hover:bg-amber-100 transition">
+          शहद की पहचान?
+        </button>
+        <button onclick="askQuickQuestion('शहडोल के सबसे लोकप्रिय उत्पाद कौन से हैं?')" class="whitespace-nowrap px-2.5 py-1 rounded-full bg-white border border-amber-200 text-amber-900 text-[11px] hover:bg-amber-100 transition">
+          लोकप्रिय उत्पाद?
+        </button>
+      </div>
+
+      <!-- Messages Area -->
+      <div id="aiChatMessages" class="flex-1 overflow-y-auto p-4 space-y-3.5 bg-gray-50/50 text-xs sm:text-sm">
+        <!-- Default Welcome Message -->
+        <div class="flex items-start gap-2.5">
+          <div class="w-7 h-7 rounded-xl bg-brand-900 text-white flex items-center justify-center flex-shrink-0 text-xs">
+            <i data-lucide="bot" class="w-4 h-4"></i>
+          </div>
+          <div class="bg-white p-3.5 rounded-2xl rounded-tl-xs border border-gray-200/80 shadow-xs max-w-[85%]">
+            <p class="text-gray-800 hindi-text leading-relaxed">
+              नमस्ते! मैं <strong>GramBazaar AI सहायक</strong> हूँ। आप मुझसे शहडोल के स्थानीय उत्पादों (जैसे कोदो-कुटकी, वन शहद, महुआ, मसाले) के लाभ, उपयोग या सुझाव के बारे में पूछ सकते हैं।
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Input Bar -->
+      <div class="p-3 bg-white border-t border-gray-100">
+        <form id="aiChatForm" onsubmit="handleAISubmit(event)" class="flex gap-2">
+          <input 
+            type="text" 
+            id="aiUserInput" 
+            placeholder="यहाँ पूछें... (उदा. कोदो-कुटकी कैसे बनाएं?)" 
+            class="flex-1 px-3.5 py-2.5 rounded-xl border border-gray-200 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-brand-700/30"
+          >
+          <button 
+            type="submit" 
+            id="aiSendBtn"
+            class="px-4 py-2.5 rounded-xl bg-brand-900 hover:bg-brand-800 text-white text-xs font-bold transition flex items-center justify-center"
+          >
+            <i data-lucide="send" class="w-4 h-4"></i>
+          </button>
+        </form>
+        <p class="text-[10px] text-gray-400 mt-1.5 text-center hindi-text">
+          नोट: सुरक्षित बैकएंड प्रॉक्सी के बिना यह सहायक स्थानीय ज्ञानकोष (Fallback Mode) पर त्वरित उत्तर देता है।
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Floating Sticky WhatsApp Button (Direct click-to-chat) -->
+  <aside aria-label="त्वरित संपर्क" class="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-2">
+    <span class="hidden sm:inline-block bg-white text-gray-800 text-xs font-bold py-1 px-3 rounded-full shadow-md border border-gray-100 animate-bounce hindi-text">
+      WhatsApp ऑर्डर: +91 9343135160
+    </span>
+    <a 
+      href="https://wa.me/919343135160?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87%20GramBazaar%21%20%E0%A4%AE%E0%A5%81%E0%A4%9D%E0%A5%87%20%E0%A4%B6%E0%A4%B9%E0%A4%A1%E0%A5%8B%E0%A4%B2%20%E0%A4%95%E0%A5%87%20%E0%A4%89%E0%A4%A4%E0%A5%8D%E0%A4%AA%E0%A4%BE%E0%A4%A6%20%E0%A4%96%E0%A4%B0%E0%A5%80%E0%A4%A6%E0%A4%A8%E0%A5%87%20%E0%A4%B9%E0%A5%88%E0%A4%82%E0%A5%A4" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="w-14 h-14 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition transform border-2 border-white"
+      aria-label="WhatsApp पर सीधा संपर्क करें"
+      title="WhatsApp पर विक्रेता से चैट करें"
+    >
+      <i data-lucide="message-circle" class="w-7 h-7"></i>
+    </a>
+  </aside>
+
+  <!-- ========================================== -->
+  <!-- JAVASCRIPT APPLICATION CODE                -->
+  <!-- ========================================== -->
+  <script>
+    // -------------------------------------------------------------
+    // 1. CONFIGURATION & STATE
+    // -------------------------------------------------------------
+    const SELLER_WHATSAPP = "919343135160"; // Official Shahdol seller phone
+    const CART_STORAGE_KEY = "grambazaar_cart_items_v1";
+
+    // Categories list with Hindi names and Lucide icon keys
+    const CATEGORIES = [
+      { id: "all", name: "सभी उत्पाद", icon: "layout-grid", desc: "सम्पूर्ण संग्रह" },
+      { id: "food", name: "स्थानीय खाद्य पदार्थ", icon: "utensils", desc: "देशी व्यंजन व नाश्ता" },
+      { id: "grains", name: "अनाज और दालें", icon: "wheat", desc: "कोदो-कुटकी, जैविक दालें" },
+      { id: "honey", name: "शहद व प्राकृतिक उत्पाद", icon: "droplet", desc: "जंगल का शुद्ध शहद" },
+      { id: "spices", name: "देशी मसाले", icon: "flame", desc: "पिसे व खड़े मसाले" },
+      { id: "handicraft", name: "हस्तशिल्प व कला", icon: "scissors", desc: "बांस शिल्प व मिट्टी कला" },
+      { id: "household", name: "ग्रामीण घरेलू उत्पाद", icon: "home", desc: "शुद्ध घी, तेल व कुटीर उत्पाद" },
+      { id: "agri", name: "कृषि उत्पाद", icon: "sprout", desc: "बीज, प्राकृतिक खाद" }
+    ];
+
+    // Master Product Catalog (Editable structure)
+    // Note: Prices are marked as verified local sample prices for Shahdol
+    const PRODUCTS = [
+      {
+        id: "gb-01",
+        name: "शुद्ध विंध्य वन शहद (Forest Honey)",
+        category: "honey",
+        categoryName: "शहद व प्राकृतिक",
+        price: 350,
+        unit: "प्रति 500 ग्राम",
+        image: "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=600&q=80",
+        description: "शहडोल के जंगलों से जनजातीय समूहों द्वारा पारंपरिक विधि से एकत्रित 100% शुद्ध एवं कच्चा प्राकृतिक शहद।",
+        badge: "लोकप्रिय",
+        available: true,
+        inStockText: "उपलब्ध"
+      },
+      {
+        id: "gb-02",
+        name: "जैविक कोदो चावल (Kodo Millet)",
+        category: "grains",
+        categoryName: "अनाज और दालें",
+        price: 120,
+        unit: "प्रति किलो",
+        image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+        description: "शहडोल का पारंपरिक पौष्टिक मोटा अनाज। उच्च फाइबर और मधुमेह रोगियों के लिए अत्यंत गुणकारी।",
+        badge: "सुपरफूड",
+        available: true,
+        inStockText: "उपलब्ध"
+      },
+      {
+        id: "gb-03",
+        name: "कुटकी बाजरा / राइस (Little Millet)",
+        category: "grains",
+        categoryName: "अनाज और दालें",
+        price: 135,
+        unit: "प्रति किलो",
+        image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=600&q=80",
+        description: "प्राकृतिक विधि से उपजाई गई देशी कुटकी। पेट के लिए हल्की एवं पौष्टिक आहार।",
+        badge: "नया उत्पाद",
+        available: true,
+        inStockText: "उपलब्ध"
+      },
+      {
+        id: "gb-04",
+        name: "शुद्ध देशी गाय का बिलोना घी",
+        category: "household",
+        categoryName: "घरेलू उत्पाद",
+        price: 900,
+        unit: "प्रति 1 लीटर",
+        image: "https://images.unsplash.com/photo-1631451095765-2c91616fc9e6?auto=format&fit=crop&w=600&q=80",
+        description: "पारंपरिक मथनी विधि (बिलोना) से तैयार किया गया सुगन्धित, दानेदार देशी गाय का शुद्ध घी।",
+        badge: "प्रीमियम",
+        available: true,
+        inStockText: "उपलब्ध"
+      },
+      {
+        id: "gb-05",
+        name: "हाथ से कुटा शुद्ध लाल मिर्च पाउडर",
+        category: "spices",
+        categoryName: "देशी मसाले",
+        price: 160,
+        unit: "प्रति 500 ग्राम",
+        image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80",
+        description: "स्थानीय खेतों की सूखी लाल मिर्च, पत्थर की खरल में कुटी हुई बिना किसी कृत्रिम रंग के।",
+        badge: "ताज़ा पिसा",
+        available: true,
+        inStockText: "उपलब्ध"
+      },
+      {
+        id: "gb-06",
+        name: "प्राकृतिक महुआ सूखा फूल / गुड़",
+        category: "food",
+        categoryName: "खाद्य पदार्थ",
+        price: 180,
+        unit: "प्रति किलो",
+        image: "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=600&q=80",
+        description: "विंध्य क्षेत्र के वनों से चुना गया सुखाया हुआ प्राकृतिक महुआ, लड्डू व पारंपरिक व्यंजनों के लिए।",
+        badge: "स्थानीय विशेषता",
+        available: true,
+        inStockText: "उपलब्ध"
+      },
+      {
+        id: "gb-07",
+        name: "हस्तनिर्मित बांस की फल-सब्जी टोकरी",
+        category: "handicraft",
+        categoryName: "हस्तशिल्प व कला",
+        price: 250,
+        unit: "प्रति पीस",
+        image: "https://images.unsplash.com/photo-1590736969955-71cc94801759?auto=format&fit=crop&w=600&q=80",
+        description: "शहडोल के स्थानीय कारीगरों द्वारा मजबूत बांस से हस्तनिर्मित पर्यावरण-अनुकूल टोकरी।",
+        badge: "हस्तशिल्प",
+        available: true,
+        inStockText: "उपलब्ध"
+      },
+      {
+        id: "gb-08",
+        name: "देशी अरहर (तुअर) दाल बिना पॉलिश",
+        category: "grains",
+        categoryName: "अनाज और दालें",
+        price: 180,
+        unit: "प्रति किलो",
+        image: "https://images.unsplash.com/photo-1585994192701-f1a505c8574a?auto=format&fit=crop&w=600&q=80",
+        description: "गांव की चक्की में दलिया की गई बिना केमिकल और बिना पॉलिश वाली पौष्टिक तुअर दाल।",
+        badge: "जैविक",
+        available: true,
+        inStockText: "उपलब्ध"
+      },
+      {
+        id: "gb-09",
+        name: "देशी हल्दी गांठ व शुद्ध चूर्ण",
+        category: "spices",
+        categoryName: "देशी मसाले",
+        price: 140,
+        unit: "प्रति 500 ग्राम",
+        image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=600&q=80",
+        description: "उच्च करक्यूमिन युक्त प्राकृतिक स्थानीय हल्दी, जो भोजन के स्वाद और स्वास्थ्य दोनों को बढ़ाए।",
+        badge: "शुद्ध",
+        available: true,
+        inStockText: "उपलब्ध"
+      },
+      {
+        id: "gb-10",
+        name: "पारंपरिक कड़कनाथ मुर्गी अंडा (देसी)",
+        category: "food",
+        categoryName: "खाद्य पदार्थ",
+        price: 150,
+        unit: "प्रति 6 पीस",
+        image: "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=600&q=80",
+        description: "मध्य प्रदेश का प्रसिद्ध कड़कनाथ पौष्टिक अंडा, स्थानीय बैकयार्ड पोल्ट्री किसानों से सीधे।",
+        badge: "प्रोटीन युक्त",
+        available: true,
+        inStockText: "सीमित स्टॉक"
+      },
+      {
+        id: "gb-11",
+        name: "घर का बना आम व नींबू का अचार",
+        category: "food",
+        categoryName: "खाद्य पदार्थ",
+        price: 220,
+        unit: "प्रति 1 किलो जार",
+        image: "https://images.unsplash.com/photo-1589135233689-d56d78ef3914?auto=format&fit=crop&w=600&q=80",
+        description: "सरसों के शुद्ध तेल और पारंपरिक मसालों में धूप में पकाया गया दादी-नानी के स्वाद वाला अचार।",
+        badge: "घरेलू स्वाद",
+        available: true,
+        inStockText: "उपलब्ध"
+      },
+      {
+        id: "gb-12",
+        name: "जैविक वर्मीकम्पोस्ट (केंचुआ खाद)",
+        category: "agri",
+        categoryName: "कृषि उत्पाद",
+        price: 250,
+        unit: "प्रति 10 किलो बैग",
+        image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80",
+        description: "गौशाला की गाय के गोबर से तैयार शुद्ध केंचुआ खाद। होम गार्डन एवं फसलों के लिए सर्वोत्तम।",
+        badge: "100% जैविक",
+        available: true,
+        inStockText: "उपलब्ध"
+      }
+    ];
+
+    // State variables
+    let cart = [];
+    let currentCategoryFilter = "all";
+    let currentSearchTerm = "";
+    let currentSort = "featured";
+
+    // -------------------------------------------------------------
+    // 2. INITIALIZATION
+    // -------------------------------------------------------------
+    document.addEventListener("DOMContentLoaded", () => {
+      loadCartFromStorage();
+      renderCategories();
+      renderProducts();
+      updateCartUI();
+      lucide.createIcons();
+    });
+
+    // -------------------------------------------------------------
+    // 3. RENDER CATEGORIES
+    // -------------------------------------------------------------
+    function renderCategories() {
+      const container = document.getElementById("categoryCardsContainer");
+      if (!container) return;
+
+      container.innerHTML = CATEGORIES.map(cat => {
+        const isSelected = (currentCategoryFilter === cat.id);
+        return `
+          <button 
+            onclick="filterByCategory('${cat.id}')"
+            class="text-left p-3.5 rounded-2xl border transition-all transform hover:-translate-y-0.5 active:scale-95 ${
+              isSelected 
+                ? 'bg-brand-900 text-white border-brand-900 shadow-md shadow-brand-900/20' 
+                : 'bg-white text-gray-800 border-gray-200/80 hover:border-brand-300 hover:bg-cream-50/50 shadow-xs'
+            }"
+          >
+            <div class="w-8 h-8 rounded-xl ${isSelected ? 'bg-white/20 text-white' : 'bg-brand-100 text-brand-900'} flex items-center justify-center mb-2">
+              <i data-lucide="${cat.icon}" class="w-4 h-4"></i>
+            </div>
+            <h4 class="font-bold text-xs sm:text-sm leading-tight hindi-text">${cat.name}</h4>
+            <p class="text-[10px] mt-1 line-clamp-1 ${isSelected ? 'text-amber-200' : 'text-gray-400'}">${cat.desc}</p>
+          </button>
+        `;
+      }).join('');
+
+      lucide.createIcons();
+    }
+
+    // -------------------------------------------------------------
+    // 4. RENDER PRODUCTS
+    // -------------------------------------------------------------
+    function renderProducts() {
+      const grid = document.getElementById("productsGrid");
+      const emptyNotice = document.getElementById("emptyNotice");
+      if (!grid) return;
+
+      let list = [...PRODUCTS];
+
+      // 1. Category Filter
+      if (currentCategoryFilter !== "all") {
+        list = list.filter(p => p.category === currentCategoryFilter);
+      }
+
+      // 2. Search Filter
+      if (currentSearchTerm.trim() !== "") {
+        const term = currentSearchTerm.toLowerCase().trim();
+        list = list.filter(p => 
+          p.name.toLowerCase().includes(term) ||
+          p.description.toLowerCase().includes(term) ||
+          p.categoryName.toLowerCase().includes(term)
+        );
+      }
+
+      // 3. Sort Filter
+      if (currentSort === "price-asc") {
+        list.sort((a, b) => a.price - b.price);
+      } else if (currentSort === "price-desc") {
+        list.sort((a, b) => b.price - a.price);
+      } else if (currentSort === "name") {
+        list.sort((a, b) => a.name.localeCompare(b.name, 'hi'));
+      }
+
+      // Handle Empty Results
+      if (list.length === 0) {
+        grid.innerHTML = "";
+        emptyNotice.classList.remove("hidden");
+        return;
+      } else {
+        emptyNotice.classList.add("hidden");
+      }
+
+      // Render cards
+      grid.innerHTML = list.map(item => {
+        const inCartItem = cart.find(c => c.id === item.id);
+        const qtyInCart = inCartItem ? inCartItem.quantity : 0;
+
+        return `
+          <div class="bg-white rounded-3xl border border-gray-200/80 hover:border-brand-300 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group">
+            
+            <!-- Image Frame -->
+            <div class="relative aspect-[4/3] bg-gray-100 overflow-hidden">
+              <img 
+                src="${item.image}" 
+                alt="${item.name}" 
+                loading="lazy"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80';"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              >
+              
+              <!-- Badge -->
+              ${item.badge ? `
+                <span class="absolute top-3 left-3 bg-brand-900/90 backdrop-blur-xs text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-xs hindi-text">
+                  ${item.badge}
+                </span>
+              ` : ''}
+
+              <!-- Stock Status -->
+              <span class="absolute top-3 right-3 bg-white/95 backdrop-blur-xs text-brand-900 text-[10px] font-bold px-2 py-0.5 rounded-full shadow-xs border border-brand-200 hindi-text flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> ${item.inStockText}
+              </span>
+            </div>
+
+            <!-- Content Area -->
+            <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
+              <div>
+                <span class="text-[11px] font-semibold text-gray-400 uppercase tracking-wider hindi-text">${item.categoryName}</span>
+                <h3 class="font-bold text-gray-900 text-base leading-snug mt-0.5 hindi-text group-hover:text-brand-900 transition">${item.name}</h3>
+                <p class="text-xs text-gray-500 mt-1 line-clamp-2 leading-relaxed hindi-text">${item.description}</p>
+              </div>
+
+              <!-- Price & Unit -->
+              <div class="pt-2 border-t border-gray-100 flex items-baseline justify-between">
+                <div>
+                  <span class="text-xl font-black text-brand-950 font-sans">₹${item.price}</span>
+                  <span class="text-xs text-gray-500 font-medium ml-1 hindi-text">${item.unit}</span>
+                </div>
+              </div>
+
+              <!-- Interaction Buttons: Cart +/- and Single WhatsApp Order -->
+              <div class="space-y-2 pt-1">
+                ${qtyInCart > 0 ? `
+                  <div class="flex items-center justify-between bg-brand-50 border border-brand-200 rounded-xl p-1">
+                    <button onclick="decrementProduct('${item.id}')" class="w-8 h-8 rounded-lg bg-white text-brand-900 font-bold hover:bg-brand-100 flex items-center justify-center transition shadow-xs">
+                      <i data-lucide="minus" class="w-3.5 h-3.5"></i>
+                    </button>
+                    <span class="text-sm font-bold text-brand-950 px-2">${qtyInCart} जोड़ा गया</span>
+                    <button onclick="incrementProduct('${item.id}')" class="w-8 h-8 rounded-lg bg-brand-900 text-white font-bold hover:bg-brand-800 flex items-center justify-center transition shadow-xs">
+                      <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                    </button>
+                  </div>
+                ` : `
+                  <button 
+                    onclick="addToCart('${item.id}')" 
+                    class="w-full py-2.5 px-3 rounded-xl bg-brand-900 hover:bg-brand-800 text-white text-xs font-bold shadow-md shadow-brand-900/10 hover:shadow-lg transition flex items-center justify-center gap-1.5 transform active:scale-95"
+                  >
+                    <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+                    <span class="hindi-text">कार्ट में जोड़ें</span>
+                  </button>
+                `}
+
+                <button 
+                  onclick="orderSingleOnWhatsApp('${item.id}')" 
+                  class="w-full py-2 px-3 rounded-xl bg-white hover:bg-emerald-50 text-emerald-800 border border-emerald-600/70 text-xs font-bold transition flex items-center justify-center gap-1.5"
+                  title="सीधे इस उत्पाद के लिए WhatsApp खोलें"
+                >
+                  <i data-lucide="message-circle" class="w-3.5 h-3.5 text-emerald-600"></i>
+                  <span class="hindi-text">WhatsApp पर पूछें</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      lucide.createIcons();
+    }
+
+    // -------------------------------------------------------------
+    // 5. CART OPERATIONS
+    // -------------------------------------------------------------
+    function addToCart(productId) {
+      const prod = PRODUCTS.find(p => p.id === productId);
+      if (!prod) return;
+
+      const existing = cart.find(c => c.id === productId);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push({
+          id: prod.id,
+          name: prod.name,
+          price: prod.price,
+          unit: prod.unit,
+          image: prod.image,
+          quantity: 1
+        });
+      }
+
+      saveCartToStorage();
+      updateCartUI();
+      renderProducts();
+    }
+
+    function incrementProduct(productId) {
+      const item = cart.find(c => c.id === productId);
+      if (item) {
+        item.quantity += 1;
+        saveCartToStorage();
+        updateCartUI();
+        renderProducts();
+      }
+    }
+
+    function decrementProduct(productId) {
+      const item = cart.find(c => c.id === productId);
+      if (item) {
+        item.quantity -= 1;
+        if (item.quantity <= 0) {
+          cart = cart.filter(c => c.id !== productId);
+        }
+        saveCartToStorage();
+        updateCartUI();
+        renderProducts();
+      }
+    }
+
+    function removeFromCart(productId) {
+      cart = cart.filter(c => c.id !== productId);
+      saveCartToStorage();
+      updateCartUI();
+      renderProducts();
+    }
+
+    function clearCart() {
+      if (confirm("क्या आप कार्ट में मौजूद सभी उत्पादों को हटाना चाहते हैं?")) {
+        cart = [];
+        saveCartToStorage();
+        updateCartUI();
+        renderProducts();
+      }
+    }
+
+    function saveCartToStorage() {
+      try {
+        localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
+      } catch (e) {
+        console.warn("LocalStorage save warning", e);
+      }
+    }
+
+    function loadCartFromStorage() {
+      try {
+        const saved = localStorage.getItem(CART_STORAGE_KEY);
+        if (saved) {
+          cart = JSON.parse(saved);
+        }
+      } catch (e) {
+        cart = [];
+      }
+    }
+
+    function updateCartUI() {
+      const badge = document.getElementById("cartCountBadge");
+      const drawerItemCountText = document.getElementById("drawerItemCountText");
+      const drawerTotalQty = document.getElementById("drawerTotalQty");
+      const drawerGrandTotal = document.getElementById("drawerGrandTotal");
+      const cartItemsList = document.getElementById("cartItemsList");
+      const checkoutTriggerBtn = document.getElementById("checkoutTriggerBtn");
+
+      const totalCount = cart.reduce((acc, curr) => acc + curr.quantity, 0);
+      const grandTotal = cart.reduce((acc, curr) => acc + (curr.price * curr.quantity), 0);
+
+      // Header Badges
+      if (badge) {
+        badge.innerText = totalCount;
+        badge.className = totalCount > 0 
+          ? "absolute -top-1.5 -right-1.5 bg-saffron-primary text-white text-[11px] font-bold h-5 min-w-[20px] px-1 rounded-full flex items-center justify-center shadow-xs scale-100 transition animate-bounce" 
+          : "absolute -top-1.5 -right-1.5 bg-gray-400 text-white text-[11px] font-bold h-5 min-w-[20px] px-1 rounded-full flex items-center justify-center shadow-xs scale-90 transition";
+      }
+
+      if (drawerItemCountText) drawerItemCountText.innerText = `${totalCount} उत्पाद जोड़े गए`;
+      if (drawerTotalQty) drawerTotalQty.innerText = `${totalCount} वस्तुएं`;
+      if (drawerGrandTotal) drawerGrandTotal.innerText = `₹${grandTotal}`;
+
+      // Disable checkout button if cart is empty
+      if (checkoutTriggerBtn) {
+        checkoutTriggerBtn.disabled = cart.length === 0;
+        if (cart.length === 0) {
+          checkoutTriggerBtn.classList.add("opacity-50", "cursor-not-allowed");
+        } else {
+          checkoutTriggerBtn.classList.remove("opacity-50", "cursor-not-allowed");
+        }
+      }
+
+      // Render Drawer Item List
+      if (cartItemsList) {
+        if (cart.length === 0) {
+          cartItemsList.innerHTML = `
+            <div class="py-14 text-center">
+              <div class="w-16 h-16 mx-auto mb-3 rounded-2xl bg-cream-100 flex items-center justify-center text-amber-700">
+                <i data-lucide="shopping-basket" class="w-8 h-8"></i>
+              </div>
+              <h4 class="font-bold text-gray-800 text-sm hindi-text">आपकी कार्ट खाली है</h4>
+              <p class="text-xs text-gray-500 mt-1 hindi-text">शहडोल के स्थानीय उत्पादों में से अपनी पसंद की चीजें जोड़ें।</p>
+              <button onclick="toggleCartDrawer(false)" class="mt-4 px-4 py-2 rounded-xl bg-brand-900 text-white text-xs font-bold hindi-text">
+                उत्पाद सूची देखें
+              </button>
+            </div>
+          `;
+        } else {
+          cartItemsList.innerHTML = cart.map(item => `
+            <div class="bg-gray-50/80 rounded-2xl p-3 border border-gray-200/70 flex gap-3 items-center">
+              <img src="${item.image}" alt="${item.name}" class="w-14 h-14 object-cover rounded-xl border border-gray-200 flex-shrink-0">
+              <div class="flex-1 min-w-0">
+                <h4 class="font-bold text-xs text-gray-900 truncate hindi-text">${item.name}</h4>
+                <p class="text-[11px] text-gray-500">₹${item.price} × ${item.quantity} = <strong class="text-brand-900 font-sans">₹${item.price * item.quantity}</strong></p>
+                <div class="flex items-center gap-2 mt-1.5">
+                  <div class="inline-flex items-center border border-gray-300 rounded-lg bg-white overflow-hidden">
+                    <button onclick="decrementProduct('${item.id}')" class="px-2 py-0.5 text-xs hover:bg-gray-100">-</button>
+                    <span class="px-2 text-xs font-bold text-gray-800">${item.quantity}</span>
+                    <button onclick="incrementProduct('${item.id}')" class="px-2 py-0.5 text-xs hover:bg-gray-100">+</button>
+                  </div>
+                  <button onclick="removeFromCart('${item.id}')" class="text-[11px] text-red-500 hover:text-red-700 underline hindi-text ml-auto">हटाएं</button>
+                </div>
+              </div>
+            </div>
+          `).join('');
+        }
+      }
+
+      lucide.createIcons();
+    }
+
+    // -------------------------------------------------------------
+    // 6. DRAWER & MODAL TOGGLES
+    // -------------------------------------------------------------
+    function toggleCartDrawer(open) {
+      const drawer = document.getElementById("cartDrawer");
+      const backdrop = document.getElementById("cartDrawerBackdrop");
+      if (!drawer || !backdrop) return;
+
+      if (open) {
+        drawer.classList.remove("translate-x-full");
+        backdrop.classList.remove("opacity-0", "pointer-events-none");
+        backdrop.classList.add("opacity-100");
+      } else {
+        drawer.classList.add("translate-x-full");
+        backdrop.classList.add("opacity-0", "pointer-events-none");
+        backdrop.classList.remove("opacity-100");
+      }
+    }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById("mobileMenu");
+      if (menu) {
+        menu.classList.toggle("hidden");
+      }
+    }
+
+    function openCheckoutModal() {
+      if (cart.length === 0) {
+        alert("कृपया पहले कार्ट में उत्पाद जोड़ें।");
+        return;
+      }
+      toggleCartDrawer(false);
+
+      const modal = document.getElementById("checkoutModalBackdrop");
+      const summaryCount = document.getElementById("checkoutSummaryCount");
+      const snippet = document.getElementById("checkoutItemsListSnippet");
+      const summaryTotal = document.getElementById("checkoutSummaryTotal");
+
+      const totalCount = cart.reduce((acc, curr) => acc + curr.quantity, 0);
+      const grandTotal = cart.reduce((acc, curr) => acc + (curr.price * curr.quantity), 0);
+
+      summaryCount.innerText = `${totalCount} वस्तुएं`;
+      summaryTotal.innerText = `₹${grandTotal}`;
+
+      snippet.innerHTML = cart.map(item => `
+        <div class="flex justify-between py-0.5">
+          <span>• ${item.name} (${item.quantity})</span>
+          <span>₹${item.price * item.quantity}</span>
+        </div>
+      `).join('');
+
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+    }
+
+    function closeCheckoutModal() {
+      const modal = document.getElementById("checkoutModalBackdrop");
+      if (modal) {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+      }
+    }
+
+    // -------------------------------------------------------------
+    // 7. WHATSAPP ORDER SUBMISSION
+    // -------------------------------------------------------------
+    function submitWhatsAppOrder(event) {
+      event.preventDefault();
+
+      const nameInput = document.getElementById("custName");
+      const phoneInput = document.getElementById("custPhone");
+      const addrInput = document.getElementById("custAddress");
+      const notesInput = document.getElementById("custNotes");
+
+      const name = nameInput.value.trim();
+      const phone = phoneInput.value.trim();
+      const address = addrInput.value.trim();
+      const notes = notesInput ? notesInput.value.trim() : "";
+
+      // Validation
+      let hasError = false;
+      if (!name) {
+        document.getElementById("custNameError").classList.remove("hidden");
+        hasError = true;
+      } else {
+        document.getElementById("custNameError").classList.add("hidden");
+      }
+
+      const phoneRegex = /^[0-9]{10}$/;
+      if (!phone || !phoneRegex.test(phone)) {
+        document.getElementById("custPhoneError").classList.remove("hidden");
+        hasError = true;
+      } else {
+        document.getElementById("custPhoneError").classList.add("hidden");
+      }
+
+      if (!address) {
+        document.getElementById("custAddressError").classList.remove("hidden");
+        hasError = true;
+      } else {
+        document.getElementById("custAddressError").classList.add("hidden");
+      }
+
+      if (cart.length === 0) {
+        alert("आपकी कार्ट खाली है!");
+        hasError = true;
+      }
+
+      if (hasError) return;
+
+      // Construct WhatsApp Formatted Message
+      const grandTotal = cart.reduce((acc, curr) => acc + (curr.price * curr.quantity), 0);
+
+      let msg = `नमस्ते GramBazaar विक्रेता जी!\nमुझे निम्नलिखित उत्पाद ऑर्डर करने हैं:\n\n`;
+      msg += `👤 *ग्राहक का नाम:* ${name}\n`;
+      msg += `📱 *मोबाइल नंबर:* +91 ${phone}\n`;
+      msg += `📍 *डिलीवरी पता:* ${address}\n`;
+      if (notes) {
+        msg += `📝 *अतिरिक्त निर्देश:* ${notes}\n`;
+      }
+      msg += `\n🛒 *ऑर्डर विवरण:*\n`;
+
+      cart.forEach((item, idx) => {
+        msg += `${idx + 1}. ${item.name} — ${item.quantity} ${item.unit} × ₹${item.price} = ₹${item.price * item.quantity}\n`;
+      });
+
+      msg += `\n💰 *कुल ऑर्डर राशि:* ₹${grandTotal}\n\n`;
+      msg += `कृपया उत्पाद की उपलब्धता और डिलीवरी की जानकारी बताएं।\nधन्यवाद!`;
+
+      // Official WhatsApp Click to Chat URL format
+      const encodedMsg = encodeURIComponent(msg);
+      const waUrl = `https://wa.me/${SELLER_WHATSAPP}?text=${encodedMsg}`;
+
+      // Show instruction toast / alert
+      alert("WhatsApp खुलेगा। कृपया संदेश देखकर Send (भेजें) बटन दबाएं।");
+
+      // Open WhatsApp in new tab or app
+      window.open(waUrl, "_blank");
+
+      // Close modal
+      closeCheckoutModal();
+    }
+
+    // Direct WhatsApp Inquiry for single product
+    function orderSingleOnWhatsApp(productId) {
+      const prod = PRODUCTS.find(p => p.id === productId);
+      if (!prod) return;
+
+      let msg = `नमस्ते GramBazaar विक्रेता जी!\n`;
+      msg += `मुझे शहडोल के इस उत्पाद के बारे में पूछताछ एवं ऑर्डर करना है:\n\n`;
+      msg += `📦 *उत्पाद:* ${prod.name}\n`;
+      msg += `💵 *कीमत:* ₹${prod.price} (${prod.unit})\n`;
+      msg += `📝 *विवरण:* ${prod.description}\n\n`;
+      msg += `कृपया इसकी वर्तमान उपलब्धता एवं डिलीवरी समय बताएं।\nधन्यवाद!`;
+
+      const waUrl = `https://wa.me/${SELLER_WHATSAPP}?text=${encodeURIComponent(msg)}`;
+      window.open(waUrl, "_blank");
+    }
+
+    // -------------------------------------------------------------
+    // 8. SEARCH & FILTER HANDLERS
+    // -------------------------------------------------------------
+    function handleSearch(query) {
+      currentSearchTerm = query;
+      const clearBtn = document.getElementById("clearSearchBtn");
+      const mobileClearBtn = document.getElementById("mobileClearSearchBtn");
+
+      if (query.trim()) {
+        if (clearBtn) clearBtn.classList.remove("hidden");
+        if (mobileClearBtn) mobileClearBtn.classList.remove("hidden");
+      } else {
+        if (clearBtn) clearBtn.classList.add("hidden");
+        if (mobileClearBtn) mobileClearBtn.classList.add("hidden");
+      }
+
+      renderProducts();
+    }
+
+    function clearSearch() {
+      currentSearchTerm = "";
+      const dInput = document.getElementById("desktopSearchInput");
+      const mInput = document.getElementById("mobileSearchInput");
+      if (dInput) dInput.value = "";
+      if (mInput) mInput.value = "";
+      const clearBtn = document.getElementById("clearSearchBtn");
+      const mobileClearBtn = document.getElementById("mobileClearSearchBtn");
+      if (clearBtn) clearBtn.classList.add("hidden");
+      if (mobileClearBtn) mobileClearBtn.classList.add("hidden");
+      renderProducts();
+    }
+
+    function filterByCategory(catId) {
+      currentCategoryFilter = catId;
+      const pill = document.getElementById("activeFilterPill");
+      const pillName = document.getElementById("activeFilterName");
+      const catObj = CATEGORIES.find(c => c.id === catId);
+
+      if (catId !== "all" && catObj) {
+        pill.classList.remove("hidden");
+        pill.classList.add("flex");
+        pillName.innerText = `श्रेणी: ${catObj.name}`;
+      } else {
+        pill.classList.add("hidden");
+        pill.classList.remove("flex");
+      }
+
+      renderCategories();
+      renderProducts();
+    }
+
+    function handleSort(sortType) {
+      currentSort = sortType;
+      renderProducts();
+    }
+
+    function resetAllFilters() {
+      currentCategoryFilter = "all";
+      currentSearchTerm = "";
+      currentSort = "featured";
+      const sortSelect = document.getElementById("sortSelect");
+      if (sortSelect) sortSelect.value = "featured";
+      clearSearch();
+      filterByCategory("all");
+    }
+
+    // -------------------------------------------------------------
+    // 9. SUGGESTION FORM SUBMISSION VIA WHATSAPP
+    // -------------------------------------------------------------
+    function handleSuggestionSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById("suggestionName").value.trim();
+      const type = document.getElementById("suggestionType").value;
+      const msg = document.getElementById("suggestionMsg").value.trim();
+
+      if (!name || !msg) return;
+
+      const fullMessage = `नमस्ते GramBazaar! मैं अपनी प्रतिक्रिया/सुझाव साझा कर रहा हूँ:\n\n👤 नाम: ${name}\n📂 विषय: ${type}\n💬 सुझाव: ${msg}\n\nधन्यवाद!`;
+      const waUrl = `https://wa.me/${SELLER_WHATSAPP}?text=${encodeURIComponent(fullMessage)}`;
+      window.open(waUrl, "_blank");
+    }
+
+    // -------------------------------------------------------------
+    // 10. GROQ AI INTEGRATION & LOCAL FALLBACK ENGINE
+    // -------------------------------------------------------------
+    function toggleAIAssistant(show = true) {
+      const modal = document.getElementById("aiModalBackdrop");
+      if (!modal) return;
+      if (show) {
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+      } else {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+      }
+    }
+
+    function askQuickQuestion(text) {
+      const input = document.getElementById("aiUserInput");
+      if (input) {
+        input.value = text;
+        handleAISubmit(new Event('submit'));
+      }
+    }
+
+    async function handleAISubmit(event) {
+      if (event) event.preventDefault();
+      const input = document.getElementById("aiUserInput");
+      const chatContainer = document.getElementById("aiChatMessages");
+      const question = input.value.trim();
+      if (!question) return;
+
+      // 1. Append User Message
+      appendMessage("user", question);
+      input.value = "";
+
+      // 2. Append Loading Indicator
+      const loadingId = "ai-loading-" + Date.now();
+      appendLoading(loadingId);
+
+      // 3. Attempt to call backend proxy if running, or use local intelligent fallback
+      try {
+        let answer = "";
+        
+        // Check if local proxy server endpoint is reachable (e.g., /api/groq-chat)
+        let response = null;
+        try {
+          response = await fetch("/api/groq-chat", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ prompt: question }),
+            signal: AbortSignal.timeout(3000) // 3 sec timeout
+          });
+        } catch (netErr) {
+          response = null; // Backend proxy not running in static preview
+        }
+
+        if (response && response.ok) {
+          const data = await response.json();
+          answer = data.reply;
+        } else {
+          // Robust Knowledge Fallback for static client execution
+          answer = generateLocalAIAnswer(question);
+        }
+
+        removeElement(loadingId);
+        appendMessage("assistant", answer);
+
+      } catch (err) {
+        removeElement(loadingId);
+        appendMessage("assistant", "क्षमा करें, AI सेवा वर्तमान में व्यस्त है। कृपया किसी भी उत्पाद सहायता के लिए सीधे विक्रेता के WhatsApp पर संपर्क करें (+91 9343135160)।");
+      }
+    }
+
+    function generateLocalAIAnswer(q) {
+      const query = q.toLowerCase();
+
+      if (query.includes("कोदो") || query.includes("कुटकी") || query.includes("शुगर") || query.includes("मधुमेह")) {
+        return "कोदो और कुटकी (Millet) शहडोल व विंध्य क्षेत्र के प्राचीन और अत्यंत पौष्टिक अनाज हैं। इनमें ग्लाइसेमिक इंडेक्स कम होता है और फाइबर प्रचुर मात्रा में होता है, जो शुगर नियंत्रित रखने और पाचन सुधारने के लिए वरदान माना जाता है। आप इसे चावल या दलिया की तरह पका सकते हैं।";
+      }
+      if (query.includes("शहद") || query.includes("शुद्ध") || query.includes("पहचान")) {
+        return "ग्रामबाज़ार का विंध्य वन शहद शहडोल के घने जंगलों से पारंपरिक रूप से निकाला जाता है। यह बिना किसी रासायनिक चाशनी या गर्म किए सीधे छाना गया कच्चा (Raw) शहद है। यह सर्दियों में गाढ़ा और खुशबूदार रहता है।";
+      }
+      if (query.includes("कड़कनाथ") || query.includes("अंडा")) {
+        return "कड़कनाथ मध्य प्रदेश की प्रसिद्ध देशी नस्ल है। इसका अंडा और मांस उच्च प्रोटीन और कम कोलेस्ट्रॉल के लिए विख्यात है। आप हमारी सूची में 6 अंडों का पैक चुनकर सीधे मंगा सकते हैं।";
+      }
+      if (query.includes("डिलीवरी") || query.includes("पहुंच") || query.includes("समय")) {
+        return "शहडोल नगर एवं नजदीकी क्षेत्रों में स्थानीय विक्रेता 24-48 घंटों के भीतर सुविधानुसार डिलीवरी उपलब्ध कराते हैं। कार्ट में उत्पाद जोड़कर WhatsApp पर ऑर्डर भेजते ही विक्रेता आपको सटीक समय बता देंगे।";
+      }
+      if (query.includes("ऑर्डर") || query.includes("खरीद")) {
+        return "ऑर्डर करने के लिए किसी उत्पाद के नीचे दिए गए '+ कार्ट में जोड़ें' बटन को दबाएं, फिर ऊपर दाईं ओर कार्ट आइकन पर क्लिक करके अपना नाम, फोन और पता भरें। अंत में 'WhatsApp पर ऑर्डर भेजें' दबाएं!";
+      }
+
+      return "ग्रामबाज़ार पर आप शहडोल के शुद्ध जैविक अनाज (कोदो, कुटकी), जंगली शहद, देशी घी, हल्दी, मसाले और हस्तनिर्मित बांस की टोकरियां प्राप्त कर सकते हैं। आप कार्ट में जोड़कर सीधे WhatsApp (+91 9343135160) पर ऑर्डर कर सकते हैं।";
+    }
+
+    function appendMessage(sender, text) {
+      const container = document.getElementById("aiChatMessages");
+      if (!container) return;
+
+      const isUser = sender === "user";
+      const div = document.createElement("div");
+      div.className = isUser ? "flex justify-end" : "flex items-start gap-2.5";
+
+      if (isUser) {
+        div.innerHTML = `
+          <div class="bg-brand-900 text-white p-3 rounded-2xl rounded-tr-xs max-w-[85%] shadow-xs">
+            <p class="hindi-text leading-relaxed">${escapeHtml(text)}</p>
+          </div>
+        `;
+      } else {
+        div.innerHTML = `
+          <div class="w-7 h-7 rounded-xl bg-amber-400 text-brand-950 flex items-center justify-center flex-shrink-0 text-xs font-bold">
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+          </div>
+          <div class="bg-white p-3.5 rounded-2xl rounded-tl-xs border border-gray-200/80 shadow-xs max-w-[85%]">
+            <p class="text-gray-800 hindi-text leading-relaxed">${text}</p>
+          </div>
+        `;
+      }
+
+      container.appendChild(div);
+      container.scrollTop = container.scrollHeight;
+      lucide.createIcons();
+    }
+
+    function appendLoading(id) {
+      const container = document.getElementById("aiChatMessages");
+      if (!container) return;
+
+      const div = document.createElement("div");
+      div.id = id;
+      div.className = "flex items-start gap-2.5";
+      div.innerHTML = `
+        <div class="w-7 h-7 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 text-xs">
+          <i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i>
+        </div>
+        <div class="bg-white px-3.5 py-2.5 rounded-2xl rounded-tl-xs border border-gray-200/80 text-xs text-gray-500 hindi-text flex items-center gap-2">
+          <span>AI उत्तर तैयार कर रहा है...</span>
+          <span class="inline-block w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping"></span>
+        </div>
+      `;
+      container.appendChild(div);
+      container.scrollTop = container.scrollHeight;
+      lucide.createIcons();
+    }
+
+    function removeElement(id) {
+      const el = document.getElementById(id);
+      if (el) el.remove();
+    }
+
+    function escapeHtml(string) {
+      return String(string).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+  </script>
+</body>
+</html>
